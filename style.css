@@ -1,0 +1,670 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  padding-top: 80px;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.title img {
+  height: 50px;
+}
+
+.myList {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.myList a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.myList a:hover {
+  color: #28a745;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.btn a {
+  text-decoration: none;
+  background-color: #28a745;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn a:hover {
+  background-color: #218838;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thirdcontainer,
+.forthcontainer,
+.sixthcontainer {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  background: white;
+  /* border-top: 2px solid black; */
+}
+
+.secondContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 40px 20px;
+  background: white;
+}
+
+.items {
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.items:hover {
+  transform: scale(1.05);
+}
+
+.items h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  backface-visibility: visible;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* background: lightgray; */
+  /* border: 1px solid black;   */
+  margin-bottom: 10px;
+  transition: transform 1s ease;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover,
+.item8:hover {
+  transform: scale(1.1);
+}
+
+.item1 {
+  background-image: url("https://organicindia.com/cdn/shop/files/tea_2_1.png?v=1737615774");
+}
+
+.item2 {
+  background-image: url("https://organicindia.com/cdn/shop/files/supplement_1.png?v=1737615800");
+}
+
+.item3 {
+  background-image: url("https://organicindia.com/cdn/shop/files/oil-n-ghee_1.png?v=1737615847");
+}
+
+.item4 {
+  background-image: url("https://organicindia.com/cdn/shop/files/healthfood_1.png?v=1737615889");
+}
+
+.item5 {
+  background-image: url("https://organicindia.com/cdn/shop/files/packagedfood_1.png?v=1737628445");
+}
+
+.item6 {
+  background-image: url("https://organicindia.com/cdn/shop/files/kure.png?v=1737616073");
+}
+
+.item7 {
+  background-image: url("https://organicindia.com/cdn/shop/files/clean_663ecc6a-96ae-4357-b3cb-b2608c1c2a35.png?v=1737616133");
+}
+
+.item8 {
+  background-image: url("https://organicindia.com/cdn/shop/files/gifting_1.png?v=1737628413");
+}
+
+h4 {
+  text-align: center;
+}
+
+/* My third container */
+
+.myproduct {
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.myproduct:hover {
+  transform: scale(1.05);
+}
+
+.myproduct div {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.myproduct h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.myproduct h3 {
+  font-size: 20px;
+  color: #e63946;
+  margin-top: 5px;
+}
+
+.myproduct input {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e63946;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myproduct input:hover {
+  background-color: #d62839;
+}
+
+.prd {
+  text-align: center;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  backface-visibility: visible;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+}
+
+#box1 {
+  background-image: url("https://organicindia.com/cdn/shop/files/organic-india-tulsi-green-tea-benefits_558X600_crop_center.jpg?v=1734083843");
+}
+#box2 {
+  background-image: url("https://organicindia.com/cdn/shop/files/Chyawanprash6_558X600_crop_center.jpg?v=1713250474");
+}
+#box3 {
+  background-image: url("https://organicindia.com/cdn/shop/files/Honey_chwayanprashCombo_2_558X600_crop_center.jpg?v=1732604542");
+}
+#box4 {
+  background-image: url("https://organicindia.com/cdn/shop/files/ComboGhee_Jaggery_2_558X600_crop_center.jpg?v=1732621813");
+}
+#box5 {
+  background-image: url("https://organicindia.com/cdn/shop/files/051A0195_d2e87661-4b64-4190-93d9-a9037a8b3ba0_558X600_crop_center.jpg?v=1715948457");
+}
+#box6 {
+  background-image: url("https://organicindia.com/cdn/shop/files/LiverKidneyCare1_558X600_crop_center.jpg?v=1715948471");
+}
+#box7 {
+  background-image: url("https://organicindia.com/cdn/shop/files/2_8a5aeb8d-4283-4304-9b40-35b4a3cdddec_558X600_crop_center.jpg?v=1737719362");
+}
+#box8 {
+  background-image: url("https://organicindia.com/cdn/shop/files/2_a75b40c3-2652-4bca-9986-1737d259cc9f_558X600_crop_center.jpg?v=1737719894");
+}
+
+input {
+  margin-top: 30px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #29a552;
+  border: none;
+  color: white;
+}
+
+/* My fifth container */
+
+.fifthcontainer {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin: 100px auto;
+  background-color: #f5f0ea;
+  gap: 40px;
+}
+
+.box1 {
+  background-image: url("https://organicindia.com/cdn/shop/files/613X630-tulsi-farm-image.png?v=1666268098");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 550px;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.box1:hover {
+  transform: scale(1.05);
+}
+
+.box2 {
+  max-width: 550px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+#shopbtn {
+  height: 45px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+#shopbtn:hover {
+  background-color: #444;
+}
+
+/* Videos Container */
+
+.videobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: auto;
+  margin: 90px;
+}
+
+#videos {
+  height: 600px;
+  width: 350px;
+}
+
+/* My seventh & eight container */
+
+.seventhcontainer,
+.eightcontainer {
+  width: 100%;
+  min-height: 720px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.cont {
+  max-width: 620px;
+  width: 100%;
+  text-align: center;
+}
+
+.cont img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+/* My ninth container */
+
+.ninthcontainer {
+  width: 100%;
+  min-height: 1000px;
+  background-image: url("https://organicindia.com/cdn/shop/files/1920-X-600-footer-option.png?v=1667468211");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mybox {
+  width: 90%;
+  max-width: 700px;
+  min-height: 800px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px green;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* My Footer */
+
+.footer {
+  background: #8dc63f; /* Green Background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .myList {
+    gap: 15px;
+  }
+  .items {
+    width: calc(33.33% - 20px);
+  }
+  .myproduct {
+    width: calc(33.33% - 20px);
+  }
+  .boxes {
+    width: calc(50% - 20px);
+  }
+  .seventhcontainer,
+  .eightcontainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cont {
+    max-width: 90%;
+  }
+
+  .mybox {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .fifthcontainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .box1 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .box2 {
+    max-width: 100%;
+  }
+
+  .icons {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .myList {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+
+  .items {
+    width: calc(50% - 20px);
+  }
+  .myproduct {
+    width: calc(50% - 20px);
+  }
+  .boxes {
+    width: 100%;
+  }
+  .seventhcontainer,
+  .eightcontainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .cont {
+    max-width: 95%;
+  }
+
+  .ninthcontainer {
+    min-height: 800px;
+    padding: 20px;
+  }
+
+  .mybox {
+    width: 100%;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .photo img {
+    width: 100px;
+    height: 100px;
+  }
+  .fifthcontainer {
+    padding: 20px;
+  }
+
+  .box1 {
+    width: 320px;
+    height: 320px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .icons img {
+    height: 60px;
+    width: 60px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #shopbtn {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .social-icons img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .items {
+    width: 100%;
+  }
+  .myproduct {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .photo img {
+    width: 80px;
+    height: 80px;
+  }
+  .box1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .icons img {
+    height: 50px;
+    width: 50px;
+  }
+
+  #shopbtn {
+    width: 130px;
+    height: 38px;
+    font-size: 13px;
+  }
+}
